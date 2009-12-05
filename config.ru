@@ -11,6 +11,8 @@ use Rack::ShowExceptions
 use Rack::Reloader, 3
 use Rack::CommonLogger, Logger.new(STDOUT)
 
+require "syslog"
+
 require "fracked/app"
  
 run Fracked::App.new
